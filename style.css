@@ -1,0 +1,383 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Type */
+@font-face{
+  font-family: 'Narrow';
+  src: url(https://cdn.glitch.global/2e794bb1-3d79-4f7f-b685-47005b753467/arialnarrow.ttf?v=1745366157991)
+}
+
+body{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1 fr;
+  grid-template-rows: auto 1 fr auto;
+  grid-template-areas:
+  "navbar navbar"
+  "sidebar main"
+  "sidebar footer";
+/*   background-color: #61aae6 */
+/*   background-image: url(https://cdn.glitch.global/2e794bb1-3d79-4f7f-b685-47005b753467/tryingsomething.png?v=1745514476538);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+nav{
+  top: 0;
+  position: sticky;
+  grid-area: navbar;
+  padding: 1em;
+  background-color: none;
+  z-index: 1;
+}
+
+.logo img {
+  float: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 260px;
+  position: absolute;
+}
+
+
+
+
+/* icons */
+.btn{
+  float: right;
+}
+
+.fa {
+  float: right;
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  color: #27314e;
+  border: none;
+}
+
+.fa-envelope {
+  color: #27314e;
+}
+
+.fa-linkedin {
+  color: #27314e;
+}
+
+aside{
+  height: calc(100vh - 50.4px);
+  top: 68px;
+  position: fixed;
+  align-self: start;
+  grid-area: sidebar;
+  background-color: none;
+}
+
+/* gif styling */
+.popup img{
+  position: fixed;
+  bottom: 5px;
+  width: 300px;
+  z-index: 3;
+}
+
+/* text */
+.popup p {
+  position: sticky;
+  text-align: center;
+  padding: 50px;
+  margin: 25px;
+  margin-top: 50%;
+}
+
+/* Popup */
+.popup {
+  position: sticky;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #91BDD8; /*#BBDB8F green*/
+  color: #27314e;
+  text-align: center;
+  font-family: 'Narrow';
+  border-radius: 6px;
+  padding: 20px;
+  position: sticky;
+/*   margin: 10px; */
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #91BDD8 transparent transparent transparent;
+}
+
+
+/* For javascript file */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+    
+.clicktext {
+  font-size: 20;
+}
+
+main{
+  grid-area: main;
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  /* both backgrounds needed for some reason */
+}
+
+/* Modal content styling */
+.modal-content {
+  margin: auto; /*center modal content */
+  padding-right: 20px; /*space between x and image */
+  width: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  border: 10px;
+}
+
+/* Close button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Gallery styling + animation */
+.image-gallery {
+  columns: 3;
+  gap: 10px;
+  padding: 20px;
+  margin: auto;
+}
+
+.image-gallery img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+
+.image-gallery img:hover {
+  transform: scale(0.97);
+}
+
+/* window resize response */
+@media(max-width: 800px){
+  .image-gallery {
+    columns: 2;
+    gap: 10px;
+    padding: 15px;
+  }
+}
+
+.aboutme{
+  display: block;
+  visibility: hidden;
+  position: sticky;
+  bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  height: 50%;
+  max-height: 30px;
+  border: auto;
+  z-index: 3;
+}
+
+.aboutModal {
+  display: none;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 4;
+}
+
+.about-content {
+  display: block;
+  visibility: hidden;
+  background-color: #27314E;
+  margin: auto;
+  border-radius: 6px;
+  width: 80%;
+  z-index: 4;
+}
+
+.about-content img{
+  display: block;
+  margin: auto;
+  padding: 15px;
+  width: 230px;
+  z-index: 4;
+}
+
+.about-content p{
+  text-align: center;
+  font-family: 'Narrow';
+  padding: 20px;
+  color: #91BDD8;
+  z-index: 4;
+}
+
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+footer{
+  grid-area: footer;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  margin: 0;
+  background-color: #27314e;
+}
+
+footer p{
+  font-family: 'Narrow';
+  color: #91BDD8;
+  text-align: center;
+  
+}
+
+p2{
+  font-family: 'Narrow';
+  color: #91BDD8;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.seeyou {
+  float: left;
+  height: 50%;
+  padding-left:  50px;
+  max-height: 30px;
+}
+
+
+.niceday {
+  float: right;
+  height: 50%;
+  padding-right:  50px;
+  max-height: 30px;
+}
+
+.container{
+  margin: 1rem;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.dollar {
+  width: 50px;
+  display: inline-block;
+  padding-top: 0px;
+  vertical-align: middle;
+}
+
+.shell {
+  width: 50px;
+  display: inline-block;
+  padding-top: 0px;
+  vertical-align: middle;
+}
+
+
+@media(max-width: 800px){
+  body{
+    grid-template-columns: 1fr;
+  }
+  
+  aside{
+    position: fixed;
+    width: 300px;
+    display: none;
+  }
+
+  .logo img{
+    width: 25%;
+    min-width: 100px;
+  }
+}
+
+@media(max-width: 400px){
+  
+  .aboutme{
+  visibility: visible;
+  }
+  
+  .aboutModal{
+  visibility: visible;
+  }
+  
+  .about-content{
+  visibility: visible;
+  }
+  
+}
+
