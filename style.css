@@ -109,7 +109,7 @@ aside{
 }
 
 .popup .popuptext {
-  visibility: hidden;
+  visibility: visible;
   width: 220px;
   background-color: #91BDD8; /*#BBDB8F green*/
   color: #27314e;
