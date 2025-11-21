@@ -43,7 +43,7 @@ function openImage(element) {
 
 //popup
 function popUp() {
-  popup.classList.toggle("show");
+  popup.classList.toggle("hide");
 }
 
 me.onclick = function(){
