@@ -5,9 +5,9 @@
 
 /* Type */
 @font-face{
-  font-family: 'Regular';
+  font-family: 'Montserrat';
   src: url(https://github.com/maleug/maliaeugenio/blob/main/fonts/Montserrat-VariableFont_wght.ttf);
-  src: url(https://github.com/maleug/maliaeugenio/blob/main/fonts/Montserrat-Italic-VariableFont_wght.ttf);
+  /* src: url(https://github.com/maleug/maliaeugenio/blob/main/fonts/Montserrat-Italic-VariableFont_wght.ttf); */
 }
 
 body{
@@ -115,7 +115,7 @@ aside{
   background-color: #91BDD8; /*#BBDB8F green*/
   color: #27314e;
   text-align: center;
-  font-family: 'Narrow';
+  font-family: 'Montserrat';
   border-radius: 6px;
   padding: 20px;
   position: sticky;
@@ -266,7 +266,7 @@ main{
 
 .about-content p{
   text-align: center;
-  font-family: 'Regular';
+  font-family: 'Montserrat';
   padding: 20px;
   color: #91BDD8;
   z-index: 4;
@@ -298,14 +298,14 @@ footer{
 }
 
 footer p{
-  font-family: 'Regular';
+  font-family: 'Montserrat';
   color: #91BDD8;
   text-align: center;
   
 }
 
 p2{
-  font-family: 'Regular';
+  font-family: 'Montserrat';
   color: #91BDD8;
   text-align: center;
   display: block;
