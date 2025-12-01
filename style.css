@@ -117,7 +117,7 @@ aside{
   text-align: center;
   font-family: 'Montserrat';
   border-radius: 6px;
-  padding: 20px;
+  padding: 25px;
   position: sticky;
 /*   margin: 10px; */
 }
@@ -142,7 +142,7 @@ aside{
 }
     
 .clicktext {
-  font-size: 15;
+  font-size: 13;
 }
 
 main{
