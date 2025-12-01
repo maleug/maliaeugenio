@@ -60,7 +60,7 @@ function hoverCats() {
 
 function leaveCats() {
   if (popup.style.display = "visible") {  
-  text.innerHTML = 'My name is Malia Eugenio and I am an artist currently based in New York City. I specialize in whimsical character illustration and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also presently a student at the School of Visual Arts (SVA) under the Illustration BFA program.'
+  text.innerHTML = 'My name is Malia Eugenio and I am an artist currently based in New York City. I specialize in whimsical character illustration and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also currently studying Illustration at the School of Visual Arts (SVA).'
   }
 }
 
@@ -72,7 +72,7 @@ function hoverAsterion() {
 
 function leaveAsterion() {
   if (popup.style.display = "visible") {  
-  text.innerHTML = 'My name is Malia Eugenio and I am an artist currently based in New York City. I specialize in whimsical character illustration and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also presently a student at the School of Visual Arts (SVA) under the Illustration BFA program.'
+  text.innerHTML = 'My name is Malia Eugenio and I am an artist currently based in New York City. I specialize in whimsical character illustration and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also currently studying Illustration at the School of Visual Arts (SVA).'
   }
 }
 
@@ -84,7 +84,7 @@ function hoverDeer() {
 
 function leaveDeer() {
   if (popup.style.display = "visible") {  
-  text.innerHTML = 'My name is Malia Eugenio and I am an artist currently based in New York City. I specialize in whimsical character illustration and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also presently a student at the School of Visual Arts (SVA) under the Illustration BFA program.'
+  text.innerHTML = 'My name is Malia Eugenio and I am an artist currently based in New York City. I specialize in whimsical character illustration and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also currently studying Illustration at the School of Visual Arts (SVA).'
   }
 }
 
