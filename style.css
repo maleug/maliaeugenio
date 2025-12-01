@@ -266,7 +266,7 @@ main{
 
 .about-content p{
   text-align: center;
-  font-family: 'Narrow';
+  font-family: 'Regular';
   padding: 20px;
   color: #91BDD8;
   z-index: 4;
@@ -298,14 +298,14 @@ footer{
 }
 
 footer p{
-  font-family: 'Narrow';
+  font-family: 'Regular';
   color: #91BDD8;
   text-align: center;
   
 }
 
 p2{
-  font-family: 'Narrow';
+  font-family: 'Regular';
   color: #91BDD8;
   text-align: center;
   display: block;
