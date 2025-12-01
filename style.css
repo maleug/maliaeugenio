@@ -5,13 +5,10 @@
 
 /* Type */
 @font-face{
-   /* font-family: 'Regular';
+  font-family: 'Regular';
   src: url(https://github.com/maleug/maliaeugenio/blob/main/fonts/Montserrat-VariableFont_wght.ttf)
-  .montserrat-<uniquifier> { */
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+  .montserrat-<uniquifier>
+  src: url()
 }
 
 body{
