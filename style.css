@@ -107,7 +107,7 @@ aside{
 .popup {
   position: sticky;
   cursor: pointer;
-  margin-top: -4%;
+  margin-top: -10%;
 }
 
 .popup .popuptext {
