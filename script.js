@@ -1,4 +1,4 @@
-let text = document.getElementById('Popup');
+let text = document.getElementById('Popup').innerHTML;
 let modal = document.getElementById("Modal");
 let modalImg = document.getElementById("image-content");
 let span = document.getElementsByClassName("close")[0];
