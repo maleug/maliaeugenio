@@ -60,7 +60,7 @@ function hoverCats() {
 
 function leaveCats() {
   if (popup.style.display = "visible") {  
-  text.innerHTML = document.getElementById('Popup')
+  text.innerHTML = text;
   }
 }
 
