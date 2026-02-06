@@ -1,4 +1,4 @@
-let text = document.getElementById('Popup').innerHTML;
+let popText = document.getElementById('Popup');
 let modal = document.getElementById("Modal");
 let modalImg = document.getElementById("image-content");
 let span = document.getElementsByClassName("close")[0];
@@ -60,7 +60,7 @@ function hoverCats() {
 
 function leaveCats() {
   if (popup.style.display = "visible") {  
-  text.innerHTML = text;
+  text.innerHTML = popText.innerHTML;
   }
 }
 
