@@ -60,7 +60,7 @@ function hoverCats() {
 
 function leaveCats() {
   if (popup.style.display = "visible") {  
-  text.innerHTML = 'My name is Malia Eugenio and I am an illustrator currently based in New York City. I specialize in whimsical character art and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also currently studying Illustration at the School of Visual Arts (SVA).'
+  text.innerHTML = document.getElementById('Popup')
   }
 }
 
