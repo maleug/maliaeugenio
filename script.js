@@ -94,7 +94,7 @@ function leaveDeer() {
 
 function hoverSpace() {
   if (popup.style.display = "visible") { //if "popup" is visible, change text to "info" when hovered over image 
-  text.innerHTML = 'Astronaut Christina Koch, in honor of the return of Artemis II. Inspired by her photograph captioned <br><q>First braids to leave Earth orbit. (unconfirmed).<q>'
+  text.innerHTML = 'Astronaut Christina Koch, in honor of the return of Artemis II. Inspired by her photograph captioned <br><q>First braids to leave Earth orbit. (unconfirmed).<q>
   }
 }
 
