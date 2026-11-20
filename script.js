@@ -3,9 +3,9 @@ let modal = document.getElementById("Modal");
 let modalImg = document.getElementById("image-content");
 let span = document.getElementsByClassName("close")[0];
 let cats = document.getElementById('cats');
-let asterion = document.getElementById('asterion');
+// let asterion = document.getElementById('asterion');
 let deer = document.getElementById('deer');
-let space = document.getElementById('space');
+// let space = document.getElementById('space');
 let popup = document.getElementById("Popup");
 let me = document.getElementById("me")
 
@@ -20,14 +20,14 @@ let span2 = document.getElementById("close2");
 cats.addEventListener("mouseover", hoverCats)
 cats.addEventListener("mouseout", leaveCats) 
 
-asterion.addEventListener("mouseover", hoverAsterion) 
-asterion.addEventListener("mouseout", leaveAsterion) 
+// asterion.addEventListener("mouseover", hoverAsterion) 
+// asterion.addEventListener("mouseout", leaveAsterion) 
 
 deer.addEventListener("mouseover", hoverDeer)
 deer.addEventListener("mouseout", leaveDeer)
 
-space.addEventListener("mouseover", hoverSpace)
-space.addEventListener("mouseout", leaveSpace)
+// space.addEventListener("mouseover", hoverSpace)
+// space.addEventListener("mouseout", leaveSpace)
 
 //modal for gallery
 span.onclick = function() {
@@ -68,17 +68,17 @@ function leaveCats() {
   }
 }
 
-function hoverAsterion() {
-  if (popup.style.display = "visible") { //if "popup" is visible, change text to "info" when hovered over image 
-  text.innerHTML = 'A book cover illustration for <i> The House of Asterion </i> by Jorge Luis Burges.'
-  }
-}
+// function hoverAsterion() {
+//   if (popup.style.display = "visible") { //if "popup" is visible, change text to "info" when hovered over image 
+//   text.innerHTML = 'A book cover illustration for <i> The House of Asterion </i> by Jorge Luis Burges.'
+//   }
+// }
 
-function leaveAsterion() {
-  if (popup.style.display = "visible") {  
-  text.innerHTML = 'My name is Malia Eugenio and I am an illustrator currently based in New York City. I specialize in whimsical character art and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also currently studying Illustration at the School of Visual Arts (SVA).'
-  }
-}
+// function leaveAsterion() {
+//   if (popup.style.display = "visible") {  
+//   text.innerHTML = 'My name is Malia Eugenio and I am an illustrator currently based in New York City. I specialize in whimsical character art and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also currently studying Illustration at the School of Visual Arts (SVA).'
+//   }
+// }
 
 function hoverDeer() {
   if (popup.style.display = "visible") { //if "popup" is visible, change text to "info" when hovered over image 
@@ -92,17 +92,17 @@ function leaveDeer() {
   }
 }
 
-function hoverSpace() {
-  if (popup.style.display = "visible") { //if "popup" is visible, change text to "info" when hovered over image 
-  text.innerHTML = 'Astronaut Christina Koch, in honor of the return of Artemis II. Inspired by her photograph captioned <br><q>First braids to leave Earth orbit. (unconfirmed).</q>'
-  }
-}
+// function hoverSpace() {
+//   if (popup.style.display = "visible") { //if "popup" is visible, change text to "info" when hovered over image 
+//   text.innerHTML = 'Astronaut Christina Koch, in honor of the return of Artemis II. Inspired by her photograph captioned <br><q>First braids to leave Earth orbit. (unconfirmed).</q>'
+//   }
+// }
 
-function leaveSpace() {
-  if (popup.style.display = "visible") {  
-  text.innerHTML = 'My name is Malia Eugenio and I am an illustrator currently based in New York City. I specialize in whimsical character art and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also currently studying Illustration at the School of Visual Arts (SVA).'
-  }
-}
+// function leaveSpace() {
+//   if (popup.style.display = "visible") {  
+//   text.innerHTML = 'My name is Malia Eugenio and I am an illustrator currently based in New York City. I specialize in whimsical character art and visual storytelling, and am endlessly inspired by everything from the colorful to the mundane. I am also currently studying Illustration at the School of Visual Arts (SVA).'
+//   }
+// }
 
 
 
