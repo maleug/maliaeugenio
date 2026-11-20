@@ -1,3 +1,109 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+/* Type */
+@font-face{
+font-family: 'Montserrat';
+src: url(fonts/Montserrat-VariableFont_wght.ttf);
+/* src: url(https://github.com/maleug/maliaeugenio/blob/main/fonts/Montserrat-Italic-VariableFont_wght.ttf); */
+}
+
+body{
+min-height: 100vh;
+display: grid;
+grid-template-columns: 300px 1fr;
+grid-template-rows: auto 1fr auto;
+grid-template-areas:
+"navbar navbar"
+"sidebar main"
+"sidebar footer";
+/*   background-color: #61aae6 */
+/*   background-image: url(https://cdn.glitch.global/2e794bb1-3d79-4f7f-b685-47005b753467/tryingsomething.png?v=1745514476538);
+ background-size: 100vw;
+ background-repeat: no-repeat;
+ background-attachment: fixed; */
+}
+
+nav{
+top: 0;
+position: sticky;
+grid-area: navbar;
+padding: 1em;
+background-color: none;
+z-index: 1;
+}
+
+.logo img {
+float: left;
+padding-left: 10px;
+padding-top: 5px;
+width: 260px;
+position: absolute;
+}
+
+
+
+
+/* icons */
+.btn{
+float: right;
+}
+
+.fa {
+float: right;
+padding: 10px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+}
+
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-instagram {
+color: #27314e;
+border: none;
+}
+
+.fa-envelope {
+color: #27314e;
+}
+
+.fa-linkedin {
+color: #27314e;
+}
+
+aside{
+height: calc(100vh - 50.4px);
+top: 68px;
+position: fixed;
+align-self: start;
+grid-area: sidebar;
+background-color: none;
+}
+
+/* gif styling */
+.popup img{
+position: fixed;
+bottom: 5px;
+width: 300px;
+z-index: 3;
+}
+
+/* text */
+.popup p {
+position: sticky;
+text-align: center;
+padding: 50px;
+margin: 20px;
+margin-top: 50%;
+}
+
+/* Popup */
 .popup {
 position: sticky;
 cursor: pointer;
