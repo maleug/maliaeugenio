@@ -113,7 +113,7 @@ aside{
 .popup .popuptext {
   visibility: visible;
   width: 220px;
-  background-color: #91BDD8; /*#BBDB8F green*/
+  /* background-color: #91BDD8; /*#BBDB8F green*/ */
   color: #27314e;
   text-align: center;
   font-family: 'Montserrat';
