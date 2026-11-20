@@ -12,7 +12,7 @@ let me = document.getElementById("me")
 //MODAL2
 
 let modal2 = document.getElementById("modal2");
-let modalImage = document.getElementById("img-content");
+let modalImage = document.getElementById("content-img");
 let span2 = document.getElementById("close2");
 
 
